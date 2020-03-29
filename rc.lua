@@ -97,7 +97,12 @@ mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesom
                                     { "Chromium", "chromium" },
 				    { "Firefox", "firefox" },
 				    { "Calibre", "calibre" },
-				    { "Foxit reader", os.getenv("HOME") .. "/opt/foxitsoftware/foxitreader/FoxitReader.sh" }
+				    { "PDF reader", os.getenv("HOME") .. "/opt/foxitsoftware/foxitreader/FoxitReader.sh" },
+				    { "Audio player", "qmmp" },
+				    { "Video player", "smplayer" },
+				    { "Youtube", "smtube" },
+				    { "Notepad", "leafpad" },
+				    { "Meeting", "zoom" }
                                   }
                         })
 
@@ -175,7 +180,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸", "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
