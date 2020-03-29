@@ -45,7 +45,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -95,7 +97,7 @@ mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesom
                                     { "Chromium", "chromium" },
 				    { "Firefox", "firefox" },
 				    { "Calibre", "calibre" },
-				    { "Foxit reader", os.getenv("HOME").."/opt/foxitsoftware/foxitreader/FoxitReader.sh" }
+				    { "Foxit reader", os.getenv("HOME") .. "/opt/foxitsoftware/foxitreader/FoxitReader.sh" }
                                   }
                         })
 
