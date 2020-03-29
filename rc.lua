@@ -97,11 +97,12 @@ mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesom
                                     { "Chromium", "chromium" },
 				    { "Firefox", "firefox" },
 				    { "Calibre", "calibre" },
-				    { "PDF reader", os.getenv("HOME") .. "/opt/foxitsoftware/foxitreader/FoxitReader.sh" },
+				    { "PDF reader", "qpdfview" },
 				    { "Audio player", "qmmp" },
 				    { "Video player", "smplayer" },
 				    { "Youtube", "smtube" },
 				    { "Notepad", "leafpad" },
+				    { "Dict", "goldendict" },
 				    { "Meeting", "zoom" }
                                   }
                         })
