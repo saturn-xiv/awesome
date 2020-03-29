@@ -1,0 +1,19 @@
+Xft.dpi:96
+
+URxvt.perl-ext-common: default,tabbed
+URxvt.letterSpace: -1
+URxvt.loginShell: true
+URxvt.font: xft:Fira Mono:size=16
+URxvt.background:black
+URxvt.foreground:white
+URxvt.secondaryScroll:True
+URxvt.borderLess:False
+URxvt.scrollstyle:next
+URxvt.scrollBar:True
+URxvt.scrollBar_right:True
+URxvt.saveLines:10000
+
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+
