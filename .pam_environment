@@ -1,3 +1,7 @@
+LANG=zh_CN.utf8
+LC_ALL=zh_CN.utf8
+LANGAGE=zh_CN.utf8
+
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx

@@ -1,6 +1,6 @@
 Xft.dpi:96
 
-URxvt.perl-ext-common: default,tabbed
+! URxvt.perl-ext-common: default,tabbed
 URxvt.letterSpace: -1
 URxvt.loginShell: true
 URxvt.font: xft:Fira Mono:size=16

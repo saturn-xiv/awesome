@@ -1,10 +1,11 @@
 #!/bin/sh
 
+
 EDITOR=vim
 
 export EDITOR
 
- xrdb .Xresources
+xrdb .Xresources
 fcitx -d
 
 exec awesome
