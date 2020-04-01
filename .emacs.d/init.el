@@ -7,7 +7,8 @@
 
 ;; 启动时最大化窗口
 (custom-set-variables
-   '(initial-frame-alist (quote ((fullscreen . maximized)))))
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(package-selected-packages (quote (company ##))))
 
 ;; 显示行号 列号
 ;(global-linum-mode 1)
@@ -27,6 +28,9 @@
 (setq inhibit-splash-screen 1)
 ;; 禁止自动生成备份文件
 (setq make-backup-files nil)
+;; 自动保存
+(setq-default auto-save-timeout 15)
+(setq-default auto-save-interval 100)
 ;; 高亮当前行
 (global-hl-line-mode 1)
 ;; 关闭默认的哔哔提示音
@@ -39,12 +43,17 @@
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 
+;; 字体
 (set-face-attribute 'default nil
 		    :family "Source Code Pro"
 		    :height 180
 		    :weight 'normal
 		    :width 'normal)
 
+
 ;; https://github.com/dracula/dracula-theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dracula")
 (load-theme 'dracula t)
+
+
+
