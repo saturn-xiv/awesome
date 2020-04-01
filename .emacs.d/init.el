@@ -1,12 +1,20 @@
+; https://www.emacswiki.org/emacs/SiteMap
+
 ;; 关闭工具栏 菜单栏 滚动条
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 
+;; 启动时最大化窗口
+(custom-set-variables
+   '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;; 显示行号 列号
 ;(global-linum-mode 1)
 (setq column-number-mode t)
 (setq line-number-mode t)
+;; 回答 y n
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; 更改光标的样式
 (setq-default cursor-type 'bar)
@@ -30,3 +38,13 @@
 (display-time-mode 1)
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
+
+(set-face-attribute 'default nil
+		    :family "Source Code Pro"
+		    :height 180
+		    :weight 'normal
+		    :width 'normal)
+
+;; https://github.com/dracula/dracula-theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dracula")
+(load-theme 'dracula t)
