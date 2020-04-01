@@ -97,6 +97,7 @@ mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesom
                                     { "Chromium", "chromium" },
 				    { "Firefox", "firefox" },
 				    { "Calibre", "calibre" },
+				    { "Emacs", "emacs" },
 				    { "PDF reader", "qpdfview" },
 				    { "Audio player", "qmmp" },
 				    { "Video player", "smplayer" },
