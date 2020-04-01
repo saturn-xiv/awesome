@@ -103,7 +103,18 @@ mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesom
 				    { "Youtube", "smtube" },
 				    { "Notepad", "leafpad" },
 				    { "Dict", "goldendict" },
-				    { "Meeting", "zoom" }
+				    { "Diary", "rednotebook" },
+				    { "Picture", "gpicview" },
+				    { "FTP", "filezilla" },
+				    { "Gimp", "gimp" },
+				    { "Dia", "dia" },
+				    { "Master PDF", "masterpdfeditor4" },
+				    { "Focus writer", "focuswriter" },
+				    { "Meeting", "zoom" },
+				    { "Remote desktop", "remmina" },
+				    { "Volume", "pavucontrol" },
+				    { "Camera", "cheese" },
+				    { "System monitor", "gkrellm" }
                                   }
                         })
 
