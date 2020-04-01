@@ -92,30 +92,48 @@ myawesomemenu = {
    { "quit", function() awesome.quit() end },
 }
 
-mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "Terminal", terminal },
-                                    { "Chromium", "chromium" },
+
+browsers_menu = {
+                                    { "Chromium", "chromium", "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
 				    { "Firefox", "firefox" },
 				    { "Calibre", "calibre" },
-				    { "Emacs", "emacs" },
 				    { "PDF reader", "qpdfview" },
+				    { "Picture", "gpicview" },
+}
+
+editors_menu = {
+				    { "Emacs", "emacs" },
+				    { "Notepad", "leafpad" },
+				    { "Diary", "rednotebook" },
+				    { "Master PDF", "masterpdfeditor4" },
+				    { "Focus writer", "focuswriter" },
+				    { "Gimp", "gimp" },
+				    { "Dia", "dia" },
+}
+
+tools_menu = {
 				    { "Audio player", "qmmp" },
 				    { "Video player", "smplayer" },
 				    { "Youtube", "smtube" },
-				    { "Notepad", "leafpad" },
 				    { "Dict", "goldendict" },
-				    { "Diary", "rednotebook" },
-				    { "Picture", "gpicview" },
 				    { "FTP", "filezilla" },
-				    { "Gimp", "gimp" },
-				    { "Dia", "dia" },
-				    { "Master PDF", "masterpdfeditor4" },
-				    { "Focus writer", "focuswriter" },
 				    { "Meeting", "zoom" },
 				    { "Remote desktop", "remmina" },
+}
+
+settings_menu = {
 				    { "Volume", "pavucontrol" },
 				    { "Camera", "cheese" },
-				    { "System monitor", "gkrellm" }
+				    { "System monitor", "gkrellm" },
+}
+
+mymainmenu = awful.menu({ items = { 
+				    { "Awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "Terminal", terminal },
+				    { "Browsers", browsers_menu },
+				    { "Editors", editors_menu },
+				    { "Tools", tools_menu },
+				    { "Settings", settings_menu },
                                   }
                         })
 
