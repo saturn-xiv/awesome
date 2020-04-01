@@ -55,5 +55,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dracula")
 (load-theme 'dracula t)
 
-
+;; https://orgmode.org/manual/Installation.html
+(add-to-list 'load-path "~/.emacs.d/org-mode/lisp")
+(add-to-list 'load-path "~/.emacs.d/org-mode/contrib/lisp")
 

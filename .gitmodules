@@ -1,3 +1,6 @@
 [submodule ".emacs.d/themes/dracula"]
 	path = .emacs.d/themes/dracula
 	url = https://github.com/dracula/emacs.git
+[submodule ".emacs.d/org-mode"]
+	path = .emacs.d/org-mode
+	url = https://code.orgmode.org/bzg/org-mode.git
