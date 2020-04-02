@@ -85,55 +85,55 @@ awful.layout.layouts = {
 -- {{{ Menu
 -- Create a launcher widget and a main menu
 myawesomemenu = {
-   { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
+   { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end, "/usr/share/icons/oxygen/base/32x32/apps/preferences-desktop-keyboard.png" },
 --   { "manual", terminal .. " -e man awesome" },
 --   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", function() awesome.quit() end },
+   { "restart", awesome.restart, "/usr/share/icons/oxygen/base/32x32/actions/view-refresh.png" },
+   { "quit", function() awesome.quit() end, "/usr/share/icons/oxygen/base/32x32/actions/application-exit.png" },
 }
 
 
 browsers_menu = {
                                     { "Chromium", "chromium", "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
-				    { "Firefox", "firefox" },
-				    { "Calibre", "calibre" },
-				    { "PDF reader", "qpdfview" },
-				    { "Picture", "gpicview" },
+				    { "Firefox", "firefox", "/usr/share/icons/hicolor/24x24/apps/firefox.png" },
+				    { "Calibre", "calibre", "/usr/share/icons/hicolor/32x32/apps/calibre-gui.png" },
+				    { "PDF reader", "qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
+				    { "Picture", "gpicview", "/usr/share/icons/hicolor/48x48/apps/gpicview.png" },
 }
 
 editors_menu = {
-				    { "Emacs", "emacs" },
-				    { "Notepad", "leafpad" },
-				    { "Diary", "rednotebook" },
-				    { "Master PDF", "masterpdfeditor4" },
-				    { "Focus writer", "focuswriter" },
-				    { "Gimp", "gimp" },
-				    { "Dia", "dia" },
+				    { "Emacs", "emacs", "/usr/share/icons/hicolor/24x24/apps/emacs.png" },
+				    { "Notepad", "leafpad", "/usr/share/icons/hicolor/24x24/apps/leafpad.png" },
+				    { "Diary", "rednotebook", "/usr/share/icons/hicolor/22x22/apps/rednotebook.png" },
+				    { "Master PDF", "masterpdfeditor4", "/opt/master-pdf-editor-4/masterpdfeditor4.png" },
+				    { "Focus writer", "focuswriter", "/usr/share/icons/hicolor/scalable/apps/focuswriter.svg" },
+				    { "Gimp", "gimp", "/usr/share/icons/hicolor/24x24/apps/gimp.png" },
+				    { "Dia", "dia", "/usr/share/icons/hicolor/24x24/apps/dia.png" },
 }
 
 tools_menu = {
-				    { "Audio player", "qmmp" },
-				    { "Video player", "smplayer" },
-				    { "Youtube", "smtube" },
-				    { "Dict", "goldendict" },
-				    { "FTP", "filezilla" },
-				    { "Meeting", "zoom" },
-				    { "Remote desktop", "remmina" },
+				    { "Audio player", "qmmp", "/usr/share/icons/hicolor/32x32/apps/qmmp.png" },
+				    { "Video player", "smplayer", "/usr/share/icons/hicolor/32x32/apps/smplayer.png" },
+				    { "Youtube", "smtube", "/usr/share/icons/hicolor/32x32/apps/smtube.png" },
+				    { "Dict", "goldendict", "/usr/share/pixmaps/goldendict.png" },
+				    { "FTP", "filezilla", "/usr/share/icons/hicolor/32x32/apps/filezilla.png" },
+				    { "Meeting", "zoom", "/usr/share/pixmaps/application-x-zoom.png" },
+				    { "Remote desktop", "remmina", "/usr/share/icons/hicolor/24x24/apps/org.remmina.Remmina.png" },
 }
 
 settings_menu = {
-				    { "Volume", "pavucontrol" },
-				    { "Camera", "cheese" },
-				    { "System monitor", "gkrellm" },
+				    { "Volume", "pavucontrol", "/usr/share/icons/oxygen/base/32x32/apps/multimedia-volume-control.png" },
+				    { "Camera", "cheese", "/usr/share/icons/hicolor/scalable/apps/org.gnome.Cheese.svg" },
+				    { "System monitor", "gkrellm", "/usr/share/icons/oxygen/base/32x32/apps/utilities-system-monitor.png" },
 }
 
 mymainmenu = awful.menu({ items = { 
 				    { "Awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "Terminal", terminal },
-				    { "Browsers", browsers_menu },
-				    { "Editors", editors_menu },
-				    { "Tools", tools_menu },
-				    { "Settings", settings_menu },
+                                    { "Terminal", terminal, "/usr/share/icons/oxygen/base/32x32/apps/utilities-terminal.png" },
+				    { "Browsers", browsers_menu, "/usr/share/icons/oxygen/base/32x32/apps/internet-web-browser.png" },
+				    { "Editors", editors_menu, "/usr/share/icons/oxygen/base/32x32/apps/accessories-text-editor.png" },
+				    { "Tools", tools_menu, "/usr/share/icons/oxygen/base/32x32/categories/applications-multimedia.png" },
+				    { "Settings", settings_menu, "/usr/share/icons/oxygen/base/32x32/actions/configure.png" },
                                   }
                         })
 
