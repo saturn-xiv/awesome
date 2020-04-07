@@ -50,7 +50,7 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
+terminal = "qterminal"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -96,6 +96,7 @@ myawesomemenu = {
 browsers_menu = {
                                     { "Chromium", "chromium", "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
 				    { "Firefox", "firefox", "/usr/share/icons/hicolor/24x24/apps/firefox.png" },
+				    { "Tor", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/start-tor-browser", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/browser/chrome/icons/default/default32.png" },
 				    { "Calibre", "calibre", "/usr/share/icons/hicolor/32x32/apps/calibre-gui.png" },
 				    { "PDF reader", "qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
 				    { "Picture", "gpicview", "/usr/share/icons/hicolor/48x48/apps/gpicview.png" },
@@ -109,6 +110,7 @@ editors_menu = {
 				    { "Focus writer", "focuswriter", "/usr/share/icons/hicolor/scalable/apps/focuswriter.svg" },
 				    { "Gimp", "gimp", "/usr/share/icons/hicolor/24x24/apps/gimp.png" },
 				    { "Dia", "dia", "/usr/share/icons/hicolor/24x24/apps/dia.png" },
+				    { "Mind mapping", "mindmaster", "/opt/MindMaster-7/mindmaster.png" },
 }
 
 tools_menu = {
