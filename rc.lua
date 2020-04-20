@@ -96,6 +96,7 @@ myawesomemenu = {
 browsers_menu = {
                                     { "Chromium", "chromium", "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
 				    { "Firefox", "firefox", "/usr/share/icons/hicolor/24x24/apps/firefox.png" },
+				    { "Email", "claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
 				    { "Tor", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/start-tor-browser", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/browser/chrome/icons/default/default32.png" },
 				    { "Calibre", "calibre", "/usr/share/icons/hicolor/32x32/apps/calibre-gui.png" },
 				    { "PDF reader", "qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
@@ -114,12 +115,14 @@ editors_menu = {
 }
 
 tools_menu = {
-				    { "Audio player", "qmmp", "/usr/share/icons/hicolor/32x32/apps/qmmp.png" },
+				    -- { "Audio player", "qmmp", "/usr/share/icons/hicolor/32x32/apps/qmmp.png" },
+				    { "Audio player", "audacious", "/usr/share/icons/hicolor/scalable/apps/audacious.svg" },
 				    { "Video player", "smplayer", "/usr/share/icons/hicolor/32x32/apps/smplayer.png" },
 				    { "Youtube", "smtube", "/usr/share/icons/hicolor/32x32/apps/smtube.png" },
 				    { "Dict", "goldendict", "/usr/share/pixmaps/goldendict.png" },
 				    { "FTP", "filezilla", "/usr/share/icons/hicolor/32x32/apps/filezilla.png" },
 				    { "Meeting", "zoom", "/usr/share/pixmaps/application-x-zoom.png" },
+				    { "VirtualBox", "virtualbox", "/usr/share/icons/hicolor/scalable/mimetypes/virtualbox.svg" },
 				    { "Remote desktop", "remmina", "/usr/share/icons/hicolor/24x24/apps/org.remmina.Remmina.png" },
 }
 

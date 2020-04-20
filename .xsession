@@ -12,7 +12,7 @@ nm-applet &
 volumeicon &
 cbatticon &
 gkrellm &
-xscreensaver &
+#xscreensaver &
 
 fcitx -d
 
