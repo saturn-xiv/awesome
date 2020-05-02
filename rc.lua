@@ -111,7 +111,7 @@ editors_menu = {
 				    { "Focus writer", "focuswriter", "/usr/share/icons/hicolor/scalable/apps/focuswriter.svg" },
 				    { "Gimp", "gimp", "/usr/share/icons/hicolor/24x24/apps/gimp.png" },
 				    { "Dia", "dia", "/usr/share/icons/hicolor/24x24/apps/dia.png" },
-				    { "Mind mapping", "mindmaster", "/opt/MindMaster-7/mindmaster.png" },
+				    { "Mind mapping", "dbus-launch vym", "/usr/share/vym/icons/vym.png" },
 }
 
 tools_menu = {

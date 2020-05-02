@@ -12,7 +12,8 @@ nm-applet &
 volumeicon &
 cbatticon &
 gkrellm &
-#xscreensaver &
+chinese-calendar &
+xscreensaver -no-splash &
 
 fcitx -d
 
