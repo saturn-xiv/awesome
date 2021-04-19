@@ -50,7 +50,7 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
 
 -- This is used later as the default terminal and editor to run.
-terminal = "qterminal"
+terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -94,22 +94,28 @@ myawesomemenu = {
 
 
 browsers_menu = {
-                                    { "Chromium", "chromium", "/usr/share/icons/hicolor/24x24/apps/chromium.png" },
+                                    { "Google Chrome", "google-chrome-stable", "/usr/share/icons/hicolor/24x24/apps/google-chrome.png" },
+				    { "Microsoft Edge", "/opt/microsoft/msedge-dev/microsoft-edge", "/usr/share/icons/hicolor/24x24/apps/microsoft-edge-dev.png" },
 				    { "Firefox", "firefox", "/usr/share/icons/hicolor/24x24/apps/firefox.png" },
+				    { "Falkon", "falkon", "/usr/share/icons/hicolor/scalable/apps/falkon.svg" },
 				    { "Email", "claws-mail", "/usr/share/icons/hicolor/48x48/apps/claws-mail.png" },
 				    { "Tor", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/start-tor-browser", os.getenv("HOME") .. "/local/tor-browser_en-US/Browser/browser/chrome/icons/default/default32.png" },
 				    { "Calibre", "calibre", "/usr/share/icons/hicolor/32x32/apps/calibre-gui.png" },
 				    { "PDF reader", "qpdfview", "/usr/share/icons/hicolor/scalable/apps/qpdfview.svg" },
+				    { "FBReader", "FBReader", "/usr/share/pixmaps/FBReader.png" },
 				    { "Picture", "gpicview", "/usr/share/icons/hicolor/48x48/apps/gpicview.png" },
+				    { "Google earth", "google-earth-pro", "/usr/share/icons/hicolor/32x32/apps/google-earth-pro.png" },
 }
 
 editors_menu = {
+				    { "VS Code", "code", "/usr/share/pixmaps/code-oss.png" },
 				    { "Emacs", "emacs", "/usr/share/icons/hicolor/24x24/apps/emacs.png" },
 				    { "Notepad", "leafpad", "/usr/share/icons/hicolor/24x24/apps/leafpad.png" },
 				    { "Diary", "rednotebook", "/usr/share/icons/hicolor/22x22/apps/rednotebook.png" },
 				    { "Master PDF", "masterpdfeditor4", "/opt/master-pdf-editor-4/masterpdfeditor4.png" },
 				    { "Focus writer", "focuswriter", "/usr/share/icons/hicolor/scalable/apps/focuswriter.svg" },
 				    { "Gimp", "gimp", "/usr/share/icons/hicolor/24x24/apps/gimp.png" },
+				    { "Inkscape", "inkscape", "/usr/share/inkscape/branding/inkscape.svg" },
 				    { "Dia", "dia", "/usr/share/icons/hicolor/24x24/apps/dia.png" },
 				    { "Mind mapping", "dbus-launch vym", "/usr/share/vym/icons/vym.png" },
 }
@@ -122,7 +128,10 @@ tools_menu = {
 				    { "Dict", "goldendict", "/usr/share/pixmaps/goldendict.png" },
 				    { "FTP", "filezilla", "/usr/share/icons/hicolor/32x32/apps/filezilla.png" },
 				    { "Meeting", "zoom", "/usr/share/pixmaps/application-x-zoom.png" },
+				    { "Eudic", "eudic", "/usr/share/pixmaps/com.eusoft.eudic.png" },
 				    { "VirtualBox", "virtualbox", "/usr/share/icons/hicolor/scalable/mimetypes/virtualbox.svg" },
+				    { "FQterm", "fqterm", "/usr/share/pixmaps/fqterm.png" },
+				    { "Putty", "putty", "/usr/share/pixmaps/putty.png" },
 				    { "Remote desktop", "remmina", "/usr/share/icons/hicolor/24x24/apps/org.remmina.Remmina.png" },
 }
 
